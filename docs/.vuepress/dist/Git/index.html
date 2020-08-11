@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>使用ssh-keygen | PAS.wiki</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/pas/logo.jpg">
+    <meta name="description" content="Problem Analysis Solution">
+    <link rel="preload" href="/pas/assets/css/0.styles.ac7fb7e6.css" as="style"><link rel="preload" href="/pas/assets/js/app.2116d41e.js" as="script"><link rel="preload" href="/pas/assets/js/2.6146c96a.js" as="script"><link rel="preload" href="/pas/assets/js/5.6ad0a223.js" as="script"><link rel="prefetch" href="/pas/assets/js/10.5cd957c5.js"><link rel="prefetch" href="/pas/assets/js/11.e3de35ac.js"><link rel="prefetch" href="/pas/assets/js/12.e953ce14.js"><link rel="prefetch" href="/pas/assets/js/13.60587636.js"><link rel="prefetch" href="/pas/assets/js/14.b395761f.js"><link rel="prefetch" href="/pas/assets/js/15.9d980504.js"><link rel="prefetch" href="/pas/assets/js/16.cf9a78f2.js"><link rel="prefetch" href="/pas/assets/js/17.425a5a72.js"><link rel="prefetch" href="/pas/assets/js/3.54d3a012.js"><link rel="prefetch" href="/pas/assets/js/4.9feeae3b.js"><link rel="prefetch" href="/pas/assets/js/6.5c0dc226.js"><link rel="prefetch" href="/pas/assets/js/7.21269144.js"><link rel="prefetch" href="/pas/assets/js/8.016d17e0.js"><link rel="prefetch" href="/pas/assets/js/9.7e842db5.js">
+    <link rel="stylesheet" href="/pas/assets/css/0.styles.ac7fb7e6.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/pas/" class="home-link router-link-active"><img src="/pas/logo.jpg" alt="PAS.wiki" class="logo"> <span class="site-name can-hide">PAS.wiki</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/pas/iOS/" class="nav-link">
+  iOS
+</a></div><div class="nav-item"><a href="/pas/Git/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Git
+</a></div><div class="nav-item"><a href="/pas/vue/" class="nav-link">
+  vue
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/pas/iOS/" class="nav-link">
+  iOS
+</a></div><div class="nav-item"><a href="/pas/Git/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Git
+</a></div><div class="nav-item"><a href="/pas/vue/" class="nav-link">
+  vue
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/pas/Git/" aria-current="page" class="active sidebar-link">Git使用</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pas/Git/#git-global-setup" class="sidebar-link">Git global setup</a></li><li class="sidebar-sub-header"><a href="/pas/Git/#…or-create-a-new-repository-on-the-command-line" class="sidebar-link">…or create a new repository on the command line</a></li><li class="sidebar-sub-header"><a href="/pas/Git/#…or-push-an-existing-repository-from-the-command-line" class="sidebar-link">…or push an existing repository from the command line</a></li><li class="sidebar-sub-header"><a href="/pas/Git/#eg-git-从远程仓库获取所有分支" class="sidebar-link">eg: git 从远程仓库获取所有分支</a></li></ul></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Git常用命令</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pas/Git/git.html" class="sidebar-link">git常用命令</a></li><li><a href="/pas/Git/git常用命令.html" class="sidebar-link">git常用命令</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="使用ssh-keygen"><a href="#使用ssh-keygen" class="header-anchor">#</a> 使用<code>ssh-keygen</code></h1> <p>Command line instructions</p> <h2 id="git-global-setup"><a href="#git-global-setup" class="header-anchor">#</a> Git global setup</h2> <div class="language- extra-class"><pre class="language-text"><code>git config --global user.name &quot;username&quot;
+git config --global user.email &quot;lanianer@qq.com&quot;
+</code></pre></div><h2 id="…or-create-a-new-repository-on-the-command-line"><a href="#…or-create-a-new-repository-on-the-command-line" class="header-anchor">#</a> …or create a new repository on the command line</h2> <div class="language- extra-class"><pre class="language-text"><code>echo &quot;# pas&quot; &gt;&gt; README.md
+git init
+git add README.md
+git commit -m &quot;first commit&quot;
+git remote add origin https://github.com/HaoChunYang/pas.git
+git push -u origin master
+</code></pre></div><h2 id="…or-push-an-existing-repository-from-the-command-line"><a href="#…or-push-an-existing-repository-from-the-command-line" class="header-anchor">#</a> …or push an existing repository from the command line</h2> <div class="language- extra-class"><pre class="language-text"><code>git remote add origin https://github.com/HaoChunYang/pas.git
+git push -u origin master
+</code></pre></div><h1 id="常用git命令"><a href="#常用git命令" class="header-anchor">#</a> 常用git命令</h1> <p>git tag</p> <p>git tag v1.0.1</p> <p>git push origin v1.0.1</p> <p>git tag -d v1.0.1</p> <p>git push origin :refs/tags/v1.0.1  //删除远程tag</p> <p>git push origin dev  //将分支推送到远端</p> <p>git branch --set-upstream-to=origin/dev  //关联</p> <p>git branch -a //查看本地和远程的所有分支
+git branch -r //查看远程分支</p> <p>git fetch //将远程分支与本地分支保持同步
+git checkout -b 本地分支名x origin/远程分支名x  //拉取远程分支并创建对应的本地分支</p> <h2 id="eg-git-从远程仓库获取所有分支"><a href="#eg-git-从远程仓库获取所有分支" class="header-anchor">#</a> eg: git 从远程仓库获取所有分支</h2> <ol><li>首先同步所有远程分支，如下：</li></ol> <div class="language- extra-class"><pre class="language-text"><code>git branch -r | grep -v '\-&gt;' | while read remote; do git branch --track &quot;${remote#origin/}&quot; &quot;$remote&quot;; done
+</code></pre></div><ol start="2"><li><p>将本地所有分支与远程保持同步 <code>git fetch --all</code></p></li> <li><p>最后拉取所有分支代码 <code>git pull --all</code></p></li></ol></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/pas/Git/git.html">
+        git常用命令
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/pas/assets/js/app.2116d41e.js" defer></script><script src="/pas/assets/js/2.6146c96a.js" defer></script><script src="/pas/assets/js/5.6ad0a223.js" defer></script>
+  </body>
+</html>
