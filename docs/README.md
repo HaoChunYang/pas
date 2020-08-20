@@ -1,8 +1,8 @@
 ---
 home: true
-heroImage: /logo1.jpg
+heroImage: /logo.jpg
 actionText: 查阅文章 →
-actionLink: /guide/
+actionLink: /old_blog/
 features:
 - title: 简洁至上
   details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
