@@ -2,5 +2,5 @@
 
 [git常用命令](git常用命令)
 
-[.gitignore忽略规则及文件不生效解决](.gitignore忽略规则及文件不生效解决)
+[.gitignore忽略规则及文件不生效解决](gitignore忽略规则及文件不生效解决)
 
