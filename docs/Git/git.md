@@ -1,32 +1,29 @@
-1. 使用`ssh-keygen`
+# 使用`ssh-keygen`
 
 Command line instructions
 
 ## Git global setup
 ```
-git config --global user.name "郝春阳"
-git config --global user.email "555046662@eaam.icbc.com.cn"
+git config --global user.name "username"
+git config --global user.email "lanianer@qq.com"
 ```
 
-## Create a new repository
+## …or create a new repository on the command line
 ```
-git clone git@83.249.172.12:xasiGroup/ios.git
-cd ios
-touch README.md
-git add README.md
-git commit -m "add README"
-git push -u origin master
-```
-
-## Existing folder or Git repository
-```
-cd existing_folder
+echo "# pas" >> README.md
 git init
-git remote add origin git@83.249.172.12:xasiGroup/ios.git
-git add .
-git commit
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/HaoChunYang/pas.git
 git push -u origin master
 ```
+
+## …or push an existing repository from the command line
+```
+git remote add origin https://github.com/HaoChunYang/pas.git
+git push -u origin master
+```
+
 
 # 更新`pod`
 升级后找不到pod命令
