@@ -10,6 +10,26 @@ module.exports = {
   },
   themeConfig: {
     logo: '/logo.jpg',
+
+    //关联到git
+    // repo: 'haochunyang/pas',
+    // repoLabel: '查看源码',
+
+    // 假如你的文档仓库和项目本身不在一个仓库：
+    docsRepo: 'haochunyang/pas',
+    // 假如文档不是放在仓库的根目录下：
+    docsDir: 'docs',
+    // 假如文档放在一个特定的分支下：
+    docsBranch: 'master',
+    // 默认是 false, 设置为 true 来启用
+    editLinks: true,
+    // 默认为 "Edit this page"
+    editLinkText: '完善此页面信息',
+
+    //最后修改时间
+    lastUpdated: '最后更新', // string | boolean
+
+
     nav:[ // 导航栏配置
       {text: 'iOS', link: '/iOS/' },
       {text: 'Git', link: '/Git/'},
