@@ -33,7 +33,9 @@ module.exports = {
     nav:[ // 导航栏配置
       {text: 'iOS', link: '/iOS/' },
       {text: 'Git', link: '/Git/'},
-      {text: 'vue', link: '/vue/'}
+      {text: 'vue', link: '/vue/'},
+      {text: '小白玩单词', link: '/PalyWords/'}, 
+      {text: '未分类', link: '/unclassified/'}
       // {text: '微博', link: 'https://baidu.com'}      
     ],
     // sidebar: 'auto', // 侧边栏配置
