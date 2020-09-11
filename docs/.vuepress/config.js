@@ -34,7 +34,7 @@ module.exports = {
       {text: 'iOS', link: '/iOS/' },
       {text: 'Git', link: '/Git/'},
       {text: 'vue', link: '/vue/'},
-      {text: '小白玩单词', link: '/PalyWords/'}, 
+      {text: '小白玩单词', link: '/PlayWords/'}, 
       {text: '未分类', link: '/unclassified/'}
       // {text: '微博', link: 'https://baidu.com'}      
     ],
