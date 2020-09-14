@@ -5,7 +5,7 @@
 ---
 # 小白玩单词
 
-<img :src="$withBase('/PlayWords/english.png')" alt="english">
+<img :src="$withBase('/images/PlayWords/english.png')" alt="english">
 
 ## contribution 
 [ˌkɒntrɪˈbjuːʃn] 

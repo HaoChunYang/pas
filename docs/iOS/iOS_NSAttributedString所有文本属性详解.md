@@ -1,7 +1,7 @@
-iOS NSAttributedString所有文本属性详解
+# iOS NSAttributedString所有文本属性详解
 
 ## NSAttributedString所有Key
-```
+``` swift
 NSFontAttributeName; //字体，value是UIFont对象
 NSParagraphStyleAttributeName;//绘图的风格（居中，换行模式，间距等诸多风格），value是NSParagraphStyle对象
 NSForegroundColorAttributeName;// 文字颜色，value是UIFont对象
@@ -26,13 +26,13 @@ NSVerticalGlyphFormAttributeName;//垂直或者水平，value是 NSNumber，0表
 
 ## 字体，颜色，背景色
 涉及到的属性
-```
+```swift
 - NSFontAttributeName
 - NSForegroundColorAttributeName
 - NSBackgroundColorAttributeName
 ```
 
-```
+```swift
 UILabel * Label = [[UILabel alloc]initWithFrame:CGRectMake(100, 100, 200, 60)];
     [self.view addSubview:Label];
     NSMutableAttributedString * mutableAttriStr = [[NSMutableAttributedString alloc] initWithString:@"bugu"];
@@ -44,12 +44,12 @@ UILabel * Label = [[UILabel alloc]initWithFrame:CGRectMake(100, 100, 200, 60)];
 ## 下划线
 涉及到的两个属性
 
-```
+```swift
 NSUnderlineStyleAttributeName
 NSUnderlineColorAttributeName
 ```
 
-```
+```swift
 UILabel * Label = [[UILabel alloc]initWithFrame:CGRectMake(100, 100, 200, 60)];
     [self.view addSubview:Label];
     NSMutableAttributedString * mutableAttriStr = [[NSMutableAttributedString alloc] initWithString:@"bugu"];
@@ -64,7 +64,7 @@ UILabel * Label = [[UILabel alloc]initWithFrame:CGRectMake(100, 100, 200, 60)];
 NSStrokeColorAttributeName
 NSStrokeWidthAttributeName
 
-```
+```swift
 UILabel * Label = [[UILabel alloc]initWithFrame:CGRectMake(100, 100, 200, 60)];
     [self.view addSubview:Label];
     NSMutableAttributedString * mutableAttriStr = [[NSMutableAttributedString alloc] initWithString:@"bugu"];
@@ -78,7 +78,7 @@ UILabel * Label = [[UILabel alloc]initWithFrame:CGRectMake(100, 100, 200, 60)];
 
 NSAttachmentAttributeName
 
-```
+```swift
 UILabel * Label = [[UILabel alloc]initWithFrame:CGRectMake(100, 100, 200, 60)];
     [self.view addSubview:Label];
     //创建Attachment Str
@@ -101,7 +101,7 @@ NSMutableParagraphStyle
 
 (看起来很奇怪，仅仅为了展示某些功能)
 
-```
+```swift
 @interface TestView : UIView
 
 @end
@@ -130,7 +130,7 @@ NSMutableParagraphStyle
 }
 ```
 
-```
+```swift
     TestView  *test = [[TestView alloc] initWithFrame:CGRectMake(100, 100,100, 60)];
     [self.view addSubview:test];
 ```
@@ -140,7 +140,7 @@ NSMutableParagraphStyle
 
 NSShadowAttributeName
 
-```
+```swift
 UILabel * Label = [[UILabel alloc]initWithFrame:CGRectMake(100, 100, 200, 60)];
     [self.view addSubview:Label];
     NSMutableAttributedString * mutableAttriStr = [[NSMutableAttributedString alloc] initWithString:@"bugu"];
@@ -158,7 +158,7 @@ UILabel * Label = [[UILabel alloc]initWithFrame:CGRectMake(100, 100, 200, 60)];
 
 NSTextEffectAttributeName
 
-```
+```swift
 UILabel * Label = [[UILabel alloc]initWithFrame:CGRectMake(100, 100, 200, 60)];
     [self.view addSubview:Label];
     NSMutableAttributedString * mutableAttriStr = [[NSMutableAttributedString alloc] initWithString:@"bugu"];
@@ -176,7 +176,7 @@ NSLinkAttributeName
 
 点击打开链接
 
-```
+```swift
 @interface ViewController ()<UITextViewDelegate>
 
 @end
@@ -219,7 +219,7 @@ NSLigatureAttributeName 属性位@(0) 和@(1)
 
 NSKernAttributeName
 
-```
+```swift
 UILabel * Label = [[UILabel alloc]initWithFrame:CGRectMake(100, 100, 200, 120)];
     [self.view addSubview:Label];
     NSMutableAttributedString * mutableAttriStr = [[NSMutableAttributedString alloc] initWithString:@"bugu"];
@@ -233,7 +233,7 @@ UILabel * Label = [[UILabel alloc]initWithFrame:CGRectMake(100, 100, 200, 120)];
 相关属性
 - NSBaselineOffsetAttributeName
 
-```
+```swift
 NSDictionary * attris = @{NSBaselineOffsetAttributeName:@(0),
                               NSFontAttributeName:[UIFont systemFontOfSize:30]};
 ```
@@ -243,7 +243,7 @@ NSDictionary * attris = @{NSBaselineOffsetAttributeName:@(0),
 
 NSObliquenessAttributeName
 
-```
+```swift
    NSDictionary * attris = @{NSObliquenessAttributeName:@(0.5),
                               NSFontAttributeName:[UIFont systemFontOfSize:30]};
 ```
@@ -253,7 +253,7 @@ NSObliquenessAttributeName
 
 NSExpansionAttributeName
 
-```
+```swift
 NSDictionary * attris = @{NSExpansionAttributeName:@(1.0),
                               NSFontAttributeName:[UIFont systemFontOfSize:30]};
 ```
