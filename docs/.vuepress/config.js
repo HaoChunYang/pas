@@ -36,6 +36,7 @@ module.exports = {
       {text: 'vue', link: '/vue/'},
       {text: '小白玩单词', link: '/PlayWords/'}, 
       {text: '未分类', link: '/unclassified/'}
+      // {text: '大牛会议室', link: '/unclassified/'}
       // {text: '微博', link: 'https://baidu.com'}      
     ],
     // sidebar: 'auto', // 侧边栏配置
