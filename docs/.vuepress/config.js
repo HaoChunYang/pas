@@ -31,6 +31,7 @@ module.exports = {
 
 
     nav:[ // 导航栏配置
+      { text: '首页', link: '/' },  
       {text: 'iOS', link: '/iOS/' },
       {text: 'Git', link: '/Git/'},
       {text: 'vue', link: '/vue/'},
@@ -67,7 +68,7 @@ module.exports = {
       ] ,
       '/iOS/': [
         {
-          title: '环境配置',
+          title: 'iOS',
           collapsable: false,
           sidebarDepth: 2,
           children: [
