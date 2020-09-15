@@ -3,9 +3,9 @@
 ## 安装命令
 
 进入终端terminal，执行如下命令
-
-`/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-`
+```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
 
 即可完成安装。
 

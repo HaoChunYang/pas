@@ -72,7 +72,8 @@ module.exports = {
           collapsable: false,
           sidebarDepth: 2,
           children: [
-            ['masOS升级后找不到pod命令', 'masOS升级后找不到pod命令'],       
+            ['', '文章列表'],
+            ['CodeSnippet/', 'iOS代码片段'],       
           ]
         }
 
