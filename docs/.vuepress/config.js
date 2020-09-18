@@ -2,7 +2,18 @@ module.exports = {
   title: 'PAS.wiki',
   description: 'Problem Analysis Solution',
   head: [ // 注入到当前页面的 HTML <head> 中的标签
-    ['link', { rel: 'icon', href: '/logo.jpg' }], // 增加一个自定义的 favicon(网页标签的图标)
+    ['link', { rel: 'icon', href: '/logo.jpg' }],
+    // 增加一个自定义的 favicon(网页标签的图标)
+    ['script', {} ,
+    `
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?738d580665aa62790e3b196747471f25";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    `]
   ],
   base: "/", // 这是部署到github相关的配置
   markdown: {
