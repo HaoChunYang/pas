@@ -1,3 +1,5 @@
+# 修改数据库默认密码后phpmyadmin无法连接
+
 修改数据库默认密码后phpmyadmin无法连接，提示phpMyAdmin 试图连接到 MySQL 服务器，但服务器拒绝连接 
 
 解决方案 在phpMyAdmin的安装目录下找到配置文件 `config.inc.php`

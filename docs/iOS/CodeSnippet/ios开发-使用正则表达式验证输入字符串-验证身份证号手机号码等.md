@@ -1,6 +1,8 @@
+# ios开发-使用正则表达式验证输入字符串-验证身份证号手机号码等
+
 当遇到字符串匹配问题时，有一种常用的解决方法就是正则表达式。通过iOS中的`NSRegularExpression`这个类就可以帮助我们实现这个。
 
-```Objectc-C
+```swift
 #pragma 正则匹配手机号
 + (BOOL)checkTelNumber:(NSString *) telNumber
 {
