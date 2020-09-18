@@ -13,6 +13,16 @@ module.exports = {
       var s = document.getElementsByTagName("script")[0]; 
       s.parentNode.insertBefore(hm, s);
     })();
+    `],
+    ['script', {} ,
+    `
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://s9.cnzz.com/z_stat.php?id=1279283349&web_id=1279283349";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
     `]
   ],
   base: "/", // 这是部署到github相关的配置
