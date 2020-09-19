@@ -7,6 +7,22 @@
 
 <img :src="$withBase('/images/PlayWords/english.png')" alt="english">
 
+
+
+## match
+美[ mætʃ ] 
+英[ mætʃ ] 
+v. 配合 / **使相配** / 敌得过
+
+n. 比赛 / 对手 / 相配的人 / 火柴
+
+## badge
+ 
+英 [bædʒ] 
+n. **徽章 / 证章 / 奖章 / 标志**
+
+v. **给予…徽章 / 授给…徽章**
+
 ## contribution 
 [ˌkɒntrɪˈbjuːʃn] 
 
