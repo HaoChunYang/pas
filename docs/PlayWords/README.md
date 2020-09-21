@@ -1,17 +1,32 @@
----
-- title: [小白玩单词]
-  link: https://echarts.apache.org/zh/index.html
 
----
 # 小白玩单词
 
 <img :src="$withBase('/images/PlayWords/english.png')" alt="english">
 
 
 
+
+## graph
+美[ ɡræf ] 
+英[ ɡrɑːf ; ɡræf ] 
+
+n. **图表** / <数学>坐标图 / 曲线图
+
+v. 用图标示 / 绘图 / 用曲线图表示
+
+- graphics  图像学
+
+## animation
+
+美[ ˌænɪ'meɪʃn ] 
+英[ ænɪ'meɪʃ(ə)n ] 
+
+n. 活泼 / 热烈 / 激励 / 卡通片绘制 / **动画**
+
 ## match
 美[ mætʃ ] 
 英[ mætʃ ] 
+
 v. 配合 / **使相配** / 敌得过
 
 n. 比赛 / 对手 / 相配的人 / 火柴
@@ -19,6 +34,7 @@ n. 比赛 / 对手 / 相配的人 / 火柴
 ## badge
  
 英 [bædʒ] 
+
 n. **徽章 / 证章 / 奖章 / 标志**
 
 v. **给予…徽章 / 授给…徽章**
@@ -32,7 +48,7 @@ n. **捐款，捐赠，贡献**
 ['snɪpɪt] 
 n. **小碎片 / 摘录**  
 
-code snippet  **代码片段**
+- code snippet  **代码片段**
 
 ## fragment 
 ['fræɡmənt] 
