@@ -4,7 +4,29 @@
 <img :src="$withBase('/images/PlayWords/english.png')" alt="english">
 
 
+## implementation
+美[ ˌɪmpləmənˈteɪʃ(ə)n ] 
+英[ ɪmplɪmɛnˈteɪʃ(ə)n ] 
 
+n. 实施 / 实践 / 执行
+
+`IMP`方法的实现。
+
+## symbolic
+
+美[ sɪm'bɑːlɪk ] 
+英[ sɪm'bɒlɪk ] 
+
+adj. 使用象征的 / 象征主义的 / **符号的** / 象征的
+
+## bridge
+
+美[ brɪdʒ ] 
+英[ brɪdʒ ] 
+
+n. **桥** / 鼻梁 / 桥牌 / 船桥
+
+v. **作桥连结** / 横跨…之上 / 缩小差距 / 架桥
 
 ## graph
 美[ ɡræf ] 
@@ -14,7 +36,7 @@ n. **图表** / <数学>坐标图 / 曲线图
 
 v. 用图标示 / 绘图 / 用曲线图表示
 
-- graphics  图像学
+- graphics  <font color=red>图像学</font>
 
 ## animation
 
