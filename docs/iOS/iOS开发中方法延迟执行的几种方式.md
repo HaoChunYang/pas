@@ -1,16 +1,21 @@
+# iOS开发中方法延迟执行的几种方式
+
 1. performSelector方法
 2. NSTimer定时器
 3. NSThread线程的sleep
 4. GCD
 
 假如有延迟执行方法
-```
+``` swift
 - (void)delayMethod{
     NSLog(@"delayMethodEnd");
 }
 ```
 1. performSelector
-`[self performSelector:@selector(delayMethod) withObject:nil/*可传任意类型参数*/ afterDelay:2.0];`
+```swift
+[self performSelector:@selector(delayMethod) withObject:nil/*可传任意类型参数*/ afterDelay:2.0];
+```
+
 注：此方法是一种非阻塞的执行方式，
 取消performSelector
 用`NSObject cancelPreviousPerformRequestsWithTarget:`
@@ -29,7 +34,7 @@
 
 4. GCD
 
-```
+```swift
 __block ViewController/*主控制器*/ *weakSelf = self;
 
 dispatch_time_t delayTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0/*延迟执行时间*/ * NSEC_PER_SEC));

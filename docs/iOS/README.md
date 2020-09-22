@@ -16,3 +16,13 @@ title: 目录
 [iOS NSAttributedString所有文本属性详解](iOS_NSAttributedString所有文本属性详解)
 
 [iOS沙盒路径获取整理](iOS沙盒路径获取整理)
+
+[Xcode11新变化：SceneDelegate](Xcode11新变化：SceneDelegate)
+
+[XCode文件后面带有问号和字母的意思](XCode文件后面带有问号和字母的意思)
+
+[XCode符号断点 Symbolic Breakpoint创建及简单使用](XCode符号断点Symbolic_Breakpoint创建及简单使用)
+
+[UIAlertController会导致push失败等问题](UIAlertController会导致push失败等问题)
+
+[iOS开发中方法延迟执行的几种方式](iOS开发中方法延迟执行的几种方式)
