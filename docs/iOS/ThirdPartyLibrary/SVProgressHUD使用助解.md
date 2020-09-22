@@ -5,10 +5,14 @@
 ```
 pod 'SVProgressHUD'
 ```
+[GitHub地址](https://github.com/SVProgressHUD/SVProgressHUD)
 
 ## 使用
 在头文件中引入
+
 `#import "SVProgressHUD.h"`
+
+
 
 - 参考：
 
