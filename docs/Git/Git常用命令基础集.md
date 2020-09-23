@@ -232,7 +232,7 @@ $ git push [remote] --force
 $ git push [remote] --all
 ```
 ## 撤销
-```
+```sh
 # 恢复暂存区的指定文件到工作区
 $ git checkout [file]
 
