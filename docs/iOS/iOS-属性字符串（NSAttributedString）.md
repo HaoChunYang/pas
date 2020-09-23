@@ -1,9 +1,9 @@
-## NSAttributedString使用
+# 属性字符串`NSAttributedString`使用
 
-NSAttributedString是一个带有属性的字符串，通过该类可以灵活地操作和呈现多种样式的文字数据。这个类的一个最简单的概括就是NSAttributedString管理一个字符串，以及与该字符串中的单个字符或某些范围的字符串相关的属性,具体实现时，NSAttributedString维护了一个NSString，用来保存最原始的字符串，另有一个NSDictionary用来保存各个子串/字符的属性。
+`NSAttributedString`是一个带有属性的字符串，通过该类可以灵活地操作和呈现多种样式的文字数据。这个类的一个最简单的概括就是`NSAttributedString`管理一个字符串，以及与该字符串中的单个字符或某些范围的字符串相关的属性,具体实现时，`NSAttributedString`维护了一个`NSString`，用来保存最原始的字符串，另有一个`NSDictionary`用来保存各个子串/字符的属性。
 
 ## NSAttributedString
-```
+```swift
 @interface NSAttributedString : NSObject <NSCopying, NSMutableCopying, NSSecureCoding>
 
 @property (readonly, copy) NSString *string;
@@ -12,7 +12,7 @@ NSAttributedString是一个带有属性的字符串，通过该类可以灵活�
 - (instancetype)initWithAttributedString:(NSAttributedString *)attrStr;
 ```
 ## NSMutableAttributedString
-```
+```swift
 @interface NSMutableAttributedString : NSAttributedString
  
 //使用字符串替换某一范围的字符
@@ -23,7 +23,7 @@ NSAttributedString是一个带有属性的字符串，通过该类可以灵活�
 @end
 ```
 
-```
+```swift
 @interface NSMutableAttributedString (NSExtendedMutableAttributedString)
 
 @property (readonly, retain) NSMutableString *mutableString;
@@ -53,7 +53,7 @@ NSAttributedString是一个带有属性的字符串，通过该类可以灵活�
 ```
 
 ## 常用属性Key
-```
+```swift
 //设置字体, 该属性所对应的值是一个 UIFont 对象。该属性用于改变一段文本的字体。如果不指定该属性，则默认为12-point Helvetica(Neue)。
 UIKIT_EXTERN NSString * const NSFontAttributeName NS_AVAILABLE(10_0, 6_0);
  
@@ -118,7 +118,7 @@ UIKIT_EXTERN NSString * const NSWritingDirectionAttributeName NS_AVAILABLE(10_6,
 UIKIT_EXTERN NSString * const NSVerticalGlyphFormAttributeName NS_AVAILABLE(10_7, 6_0);
 ```
 ## NSUnderlineStyle
-```
+```swift
 //  下面定义了下划线、删除线支持的样式
 typedef NS_ENUM(NSInteger, NSUnderlineStyle) {
     NSUnderlineStyleNone                                    = 0x00,// 不设置下划线
@@ -147,7 +147,7 @@ UIKIT_EXTERN NSString *const NSTextEffectLetterpressStyle NS_AVAILABLE(10_10, 7_
 ## 常用的一些场景
 
 ## 处理简单的字符串，设置段落，字体，颜色
-```
+```swift
 func handleParagraphStyle(){
     let string = "天道酬勤,持之以恒！天道酬勤,持之以恒天道酬勤,持之以恒天道酬勤,持之以恒天道酬勤,持之以恒天道酬勤,持之以恒,Cheer up!"
     //创建可变属性字符串
@@ -172,7 +172,7 @@ func handleParagraphStyle(){
 ```
 
 ## 如何在Label中显示图片和文字
-```
+```swift
 //如何在Label中显示图片和文字
 -(void)showImageWithAttributedString{
     
@@ -197,7 +197,7 @@ func handleParagraphStyle(){
 
 ## 加载HTML标签文本
 因为解析的数据里面有html标签，就使用下面的代码把字符串转换成data进行初始化。
-```
+```swift
 NSMutableAttributedString * attrStr = [[NSMutableAttributedString alloc] initWithData: [str dataUsingEncoding:NSUnicodeStringEncoding]
                                                                               options:@{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType }
                                                                    documentAttributes:nil
@@ -205,7 +205,7 @@ NSMutableAttributedString * attrStr = [[NSMutableAttributedString alloc] initWit
 ```
 
 比如：加载本地html文件
-```
+```swift
 NSURL *htmlString = [[NSBundle mainBundle]  URLForResource: @"string"  withExtension:@"html"];
 NSAttributedString *stringWithHTMLAttributes = [[NSAttributedString alloc] initWithFileURL:htmlString
                                                                                        options:@{NSDocumentTypeDocumentAttribute:NSHTMLTextDocumentType}
@@ -214,7 +214,7 @@ NSAttributedString *stringWithHTMLAttributes = [[NSAttributedString alloc] initW
 textView.attributedText = stringWithHTMLAttributes;// you can use a label also
 ```
 ## 简单的html文件
-```
+```swift
 <html>
   <head>
     <style type="text/css">
@@ -240,7 +240,7 @@ textView.attributedText = stringWithHTMLAttributes;// you can use a label also
 ```
 
 ## 使用正则表达式查找字符并设置样式
-```
+```swift
 NSMutableAttributedString *goodText = [[NSMutableAttributedString alloc] initWithString:articleText];
 
 NSRange range = [articleText rangeOfString:@"\\[.+?\\]" options:NSRegularExpressionSearch|NSCaseInsensitiveSearch];
@@ -260,7 +260,7 @@ if (range.location != NSNotFound) {
 ```
 
 ## 迭代属性
-```
+```swift
 let sentence = "the cat sat on the mat"
 
 // 属性设置
@@ -288,12 +288,12 @@ attributedSentence.enumerateAttribute(.font, in: NSRange(0..<attributedSentence.
 ## Key的简单使用
 1、下划线，涉及到的两个属性
 
-NSUnderlineStyleAttributeName
+`NSUnderlineStyleAttributeName`
 
-NSUnderlineColorAttributeName
+`NSUnderlineColorAttributeName`
 
 简单实现
-```
+```swift
 UILabel * label = [[UILabel alloc]initWithFrame:CGRectMake(100, 100, 200, 60)];
 [self.view addSubview:label];
 NSMutableAttributedString * mutableAttriStr = [[NSMutableAttributedString alloc] initWithString:@"NSAttributedString"];
@@ -306,12 +306,12 @@ label.attributedText = mutableAttriStr;
 ```
 2、描边，涉及到的两个属性
 
-NSStrokeColorAttributeName
+`NSStrokeColorAttributeName`
 
-NSStrokeWidthAttributeName
+`NSStrokeWidthAttributeName`
 
 替换属性字典即可
-```
+```swift
 UILabel * label = [[UILabel alloc]initWithFrame:CGRectMake(100, 100, 200, 60)];
 [self.view addSubview:label];
 NSMutableAttributedString * mutableAttriStr = [[NSMutableAttributedString alloc] initWithString:@"NSAttributedString"];
@@ -322,7 +322,7 @@ NSDictionary * attris = @{NSForegroundColorAttributeName:[UIColor whiteColor],
 label.attributedText = mutableAttriStr;
 ```
 3、阴影效果
-```
+```swift
 UILabel * label = [[UILabel alloc]initWithFrame:CGRectMake(100, 100, 200, 60)];
 [self.view addSubview:label];
 NSMutableAttributedString * mutableAttriStr = [[NSMutableAttributedString alloc] initWithString:@"NSAttributedString"];
@@ -337,7 +337,7 @@ label.attributedText = mutableAttriStr;
 4、链接
 
 点击文字打开链接
-```
+```swift
 #import "ViewController.h"
 
 @interface ViewController ()<UITextViewDelegate>
@@ -379,5 +379,6 @@ label.attributedText = mutableAttriStr;
 
 作者：Longshihua
 链接：https://www.jianshu.com/p/4d4f2c6d964c
+
 来源：简书
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
