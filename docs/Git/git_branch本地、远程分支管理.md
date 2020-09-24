@@ -1,6 +1,8 @@
+# git branch本地、远程分支管理
+
 - 查看本地分支
 
-```
+```sh
 git branch 列出当前分支清单
 
 git branch -a 查看远程分支和本地分支
@@ -19,7 +21,7 @@ git checkout 分支名
 
 ~~git pull origin 远程分支名~~
 **发现不在小心在其他分支上直接执行上面命令拉取时，把所在分支内容变成远程分支的内容了，不知道怎么操作变回来了。（所以还是不用这个了。使用`git checkout 远程分支名`吧）**
-```
+```sh
 当在本地拉取远程分支并在本地对应分支时，也可以git pull直接拉取
 
 git fetch origin 同步远程服务器的数据到本地
@@ -39,7 +41,7 @@ git push origin 远程分支名
 
 - 删除分支
 
-```
+```sh
 git branch -d test：删除本地test分支
 
 git branch -D test： test分支还没有合入当前分支，所以要用-D参数才能删掉。

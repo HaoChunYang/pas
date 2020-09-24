@@ -1,7 +1,7 @@
 # Git 常用命令
 
 ## 仓库
-```
+```sh
 # 在当前目录新建一个Git代码库
 $ git init
 
@@ -12,7 +12,7 @@ $ git init [project-name]
 $ git clone [url]
 ```
 ## 配置
-```
+```sh
 # 显示当前的Git配置
 $ git config --list
 
@@ -24,7 +24,7 @@ $ git config [--global] user.name "[name]"
 $ git config [--global] user.email "[email address]"
 ```
 ## 增加/删除文件
-```
+```sh
 # 添加指定文件到暂存区
 $ git add [file1] [file2] ...
 
@@ -48,7 +48,7 @@ $ git rm --cached [file]
 $ git mv [file-original] [file-renamed]
 ```
 ## 代码提交
-```
+```sh
 # 提交暂存区到仓库区
 $ git commit -m [message]
 
@@ -69,7 +69,7 @@ $ git commit --amend -m [message]
 $ git commit --amend [file1] [file2] ...
 ```
 ## 分支
-```
+```sh
 # 列出所有本地分支
 $ git branch
 
@@ -114,7 +114,7 @@ $ git push origin --delete [branch-name]
 $ git branch -dr [remote/branch]
 ```
 ## 标签
-```
+```sh
 # 列出所有tag
 $ git tag
 
@@ -143,7 +143,7 @@ $ git push [remote] --tags
 $ git checkout -b [branch] [tag]
 ```
 ## 查看信息
-```
+```sh
 # 显示有变更的文件
 $ git status
 
@@ -206,7 +206,7 @@ $ git show [commit]:[filename]
 $ git reflog
 ```
 ## 远程同步
-```
+```sh
 # 下载远程仓库的所有变动
 $ git fetch [remote]
 
@@ -266,7 +266,7 @@ $ git stash
 $ git stash pop
 ```
 ## 其他
-```
+```sh
 # 生成一个可供发布的压缩包
 $ git archive
 ```

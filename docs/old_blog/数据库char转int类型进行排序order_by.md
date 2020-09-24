@@ -7,20 +7,20 @@ char转化int排序
 mysql为我们提供了两个类型转换函数：CAST和CONVERT
 
 - 使用CAST将varchar转换成int类型排序
-```
+```sql
 select server_id from cardserver
  where game_id = 1 
 order by CAST(server_id as SIGNED) desc limit 10;
 ```
 
 - 使用CONVERT将varchar转换成int类型排序
-```
+```sql
 select server_id from cardserver
  where game_id = 1 
 order by CONVERT(server_id,SIGNED) desc limit 10;
 ```
 - +0
-```
+```sql
 select server_id from cardserver 
 where game_id = 1 
 order by server_id+0 desc limit 10;

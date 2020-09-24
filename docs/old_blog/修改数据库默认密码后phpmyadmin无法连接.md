@@ -5,7 +5,7 @@
 解决方案 在phpMyAdmin的安装目录下找到配置文件 `config.inc.php`
 
 修改其中的密码项`$cfg[‘Servers’][$i][‘password’]`就可以了
-```
+```php
 $cfg['Servers'][$i]['auth_type'] = 'config';
 $cfg['Servers'][$i]['user'] = '用户名';
 $cfg['Servers'][$i]['password'] = '密码';

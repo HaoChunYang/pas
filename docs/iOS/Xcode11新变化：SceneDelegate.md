@@ -24,7 +24,7 @@ iOS13之后，Appdelegate的职责是：
 
 ## 更新后代码写法
 
-```
+```swift
 - (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions {
 
     UIWindowScene *windowScene = (UIWindowScene *)scene;
