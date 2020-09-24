@@ -11,3 +11,5 @@
 [git上删除已经提交的.DS_Store文件](git上删除已经提交的.DS_Store文件)
 
 [git branch本地、远程分支管理](git_branch本地、远程分支管理)
+
+[Git撤销对远程仓库的push&commit提交](Git撤销对远程仓库的push&commit提交)

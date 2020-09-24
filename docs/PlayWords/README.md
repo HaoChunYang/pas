@@ -4,6 +4,19 @@
 <img :src="$withBase('/images/PlayWords/english.png')" alt="english">
 
 
+
+## manifest
+美[ 'mænɪfest ] 
+英[ 'mænɪfest ] 
+
+v. 表明 / 证明 / 显灵 / 显现
+
+n. 舱单 / 旅客名单 / 货物清单 / 货运列车编组清单
+
+adj. 显然的 / 清楚的 / 明白的
+
+`manifest.json`
+
 ## implementation
 美[ ˌɪmpləmənˈteɪʃ(ə)n ] 
 英[ ɪmplɪmɛnˈteɪʃ(ə)n ] 
@@ -36,7 +49,7 @@ n. **图表** / <数学>坐标图 / 曲线图
 
 v. 用图标示 / 绘图 / 用曲线图表示
 
-- graphics  <font color=red>图像学</font>
+- `graphics`  <font color=red>图像学</font>
 
 ## animation
 
