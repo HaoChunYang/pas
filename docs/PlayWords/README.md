@@ -5,6 +5,15 @@
 
 
 
+
+## semaphore
+美[ 'seməfɔːr ] 
+英[ 'seməfɔː ] 
+
+v. 用旗语发出（信息）
+
+n. **信号** / 旗语 / 臂板信号机
+
 ## manifest
 美[ 'mænɪfest ] 
 英[ 'mænɪfest ] 
