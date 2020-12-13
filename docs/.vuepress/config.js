@@ -4,8 +4,8 @@ module.exports = {
   head: [ // 注入到当前页面的 HTML <head> 中的标签
     ['link', { rel: 'icon', href: '/logo.jpg' }],
     // 增加一个自定义的 favicon(网页标签的图标)
-    ['script', {} ,
-    `
+    ['script', {},
+      `
     var _hmt = _hmt || [];
     (function() {
       var hm = document.createElement("script");
@@ -14,8 +14,8 @@ module.exports = {
       s.parentNode.insertBefore(hm, s);
     })();
     `],
-    ['script', {} ,
-    `
+    ['script', {},
+      `
     var _hmt = _hmt || [];
     (function() {
       var hm = document.createElement("script");
@@ -51,20 +51,20 @@ module.exports = {
     lastUpdated: '最后更新', // string | boolean
 
 
-    nav:[ // 导航栏配置
-      { text: '首页', link: '/' },  
-      {text: 'iOS', link: '/iOS/' },
-      {text: 'Git', link: '/Git/'},
-      {text: 'vue', link: '/vue/'},
-      {text: '小白玩单词', link: '/PlayWords/'}, 
-      {text: '未分类', link: '/unclassified/'},
+    nav: [ // 导航栏配置
+      { text: '首页', link: '/' },
+      { text: 'iOS', link: '/iOS/' },
+      { text: 'Git', link: '/Git/' },
+      { text: 'vue', link: '/vue/' },
+      { text: '小白玩单词', link: '/PlayWords/' },
+      { text: '未分类', link: '/unclassified/' },
       {
-        text: '更多》', 
+        text: '更多》',
         items: [
-          {text: 'Rust', link: 'https://www.rust-lang.org/zh-CN/'}
+          { text: 'Rust', link: 'https://www.rust-lang.org/zh-CN/' }
         ]
       },
-      
+
       // {text: '大牛会议室', link: '/unclassified/'}
       // {text: '微博', link: 'https://baidu.com'}      
     ],
@@ -93,7 +93,7 @@ module.exports = {
             // ['git', 'git常用命令'],
           ]
         }
-      ] ,
+      ],
       '/iOS/': [
         {
           title: 'iOS',
