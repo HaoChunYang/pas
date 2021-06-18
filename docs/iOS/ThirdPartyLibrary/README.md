@@ -1,5 +1,5 @@
 # 第三方库
 
-[SVProgressHUD使用助解](SVProgressHUD使用助解)
+[SVProgressHUD 使用助解](./SVProgressHUD使用助解.md)
 
-[MJRefresh使用助解](MJRefresh使用助解)
+[MJRefresh 使用助解](./MJRefresh使用助解.md)

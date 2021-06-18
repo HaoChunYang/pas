@@ -1,6 +1,7 @@
 module.exports = {
-  title: 'PAS.wiki',
-  description: 'Problem Analysis Solution',
+  lang: 'zh-CN',
+  title: 'bugu 站',
+  description: 'bug + u 站 Problem Analysis Solution',
   head: [ // 注入到当前页面的 HTML <head> 中的标签
     ['link', { rel: 'icon', href: '/logo.jpg' }],
     // 增加一个自定义的 favicon(网页标签的图标)
@@ -48,10 +49,13 @@ module.exports = {
     editLinkText: '完善此页面信息',
 
     //最后修改时间
-    lastUpdated: '最后更新', // string | boolean
+    lastUpdatedText: '最后更新',
+    contributors: false,
+    contributorsText: '贡献者',
 
+    backToHome: '返回首页',
 
-    nav: [ // 导航栏配置
+    navbar: [ // 导航栏配置
       { text: '首页', link: '/' },
       { text: 'iOS', link: '/iOS/' },
       { text: 'Git', link: '/Git/' },
@@ -60,10 +64,10 @@ module.exports = {
       { text: '未分类', link: '/unclassified/' },
       {
         text: '更多》',
-        items: [
+        children: [
           { text: 'Rust', link: 'https://www.rust-lang.org/zh-CN/' }
         ]
-      },
+      }
 
       // {text: '大牛会议室', link: '/unclassified/'}
       // {text: '微博', link: 'https://baidu.com'}      
