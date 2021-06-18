@@ -6,9 +6,9 @@
 
 ## [iOS：动态库的加载顺序](https://www.jianshu.com/p/ceb33cff30f6)
 
-## [<font color=blue>UICollectionView 参考记录</font>](./UICollectionView参考记录.md)
+## [UICollectionView 参考记录](./UICollectionView参考记录.md)
 
-## [<font color=blue>WKWebView 参考记录</font>](./WKWebView参考记录.md)
+## [WKWebView 参考记录](./WKWebView参考记录.md)
 
 ## [使用系统的 AVMetadataObject 类实现二维码扫描](https://blog.csdn.net/ant_huzi/article/details/50540337)
 
@@ -22,4 +22,4 @@
 
 ## [iOS11 UIBarButtonItem 无法偏移问题坑](https://cloud.tencent.com/developer/article/1148087)
 
-## [<font color=red>iOS 基于 MVVM + RAC + ViewModel-Based Navigation 的微信开发（一）</font>](https://www.jianshu.com/p/fd407a4ecb8e)
+## [iOS 基于 MVVM + RAC + ViewModel-Based Navigation 的微信开发（一）](https://www.jianshu.com/p/fd407a4ecb8e)

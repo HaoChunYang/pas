@@ -1,22 +1,18 @@
-
 # 小白玩单词
 
-<img :src="$withBase('/images/PlayWords/english.png')" alt="english">
-
-
-
-
 ## semaphore
-美[ 'seməfɔːr ] 
-英[ 'seməfɔː ] 
+
+美[ 'seməfɔːr ]
+英[ 'seməfɔː ]
 
 v. 用旗语发出（信息）
 
 n. **信号** / 旗语 / 臂板信号机
 
 ## manifest
-美[ 'mænɪfest ] 
-英[ 'mænɪfest ] 
+
+美[ 'mænɪfest ]
+英[ 'mænɪfest ]
 
 v. 表明 / 证明 / 显灵 / 显现
 
@@ -27,8 +23,9 @@ adj. 显然的 / 清楚的 / 明白的
 `manifest.json`
 
 ## implementation
-美[ ˌɪmpləmənˈteɪʃ(ə)n ] 
-英[ ɪmplɪmɛnˈteɪʃ(ə)n ] 
+
+美[ ˌɪmpləmənˈteɪʃ(ə)n ]
+英[ ɪmplɪmɛnˈteɪʃ(ə)n ]
 
 n. 实施 / 实践 / 执行
 
@@ -36,84 +33,92 @@ n. 实施 / 实践 / 执行
 
 ## symbolic
 
-美[ sɪm'bɑːlɪk ] 
-英[ sɪm'bɒlɪk ] 
+美[ sɪm'bɑːlɪk ]
+英[ sɪm'bɒlɪk ]
 
 adj. 使用象征的 / 象征主义的 / **符号的** / 象征的
 
 ## bridge
 
-美[ brɪdʒ ] 
-英[ brɪdʒ ] 
+美[ brɪdʒ ]
+英[ brɪdʒ ]
 
 n. **桥** / 鼻梁 / 桥牌 / 船桥
 
 v. **作桥连结** / 横跨…之上 / 缩小差距 / 架桥
 
 ## graph
-美[ ɡræf ] 
-英[ ɡrɑːf ; ɡræf ] 
+
+美[ ɡræf ]
+英[ ɡrɑːf ; ɡræf ]
 
 n. **图表** / <数学>坐标图 / 曲线图
 
 v. 用图标示 / 绘图 / 用曲线图表示
 
-- `graphics`  <font color=red>图像学</font>
+- `graphics` 图像学
 
 ## animation
 
-美[ ˌænɪ'meɪʃn ] 
-英[ ænɪ'meɪʃ(ə)n ] 
+美[ ˌænɪ'meɪʃn ]
+英[ ænɪ'meɪʃ(ə)n ]
 
 n. 活泼 / 热烈 / 激励 / 卡通片绘制 / **动画**
 
 ## match
-美[ mætʃ ] 
-英[ mætʃ ] 
+
+美[ mætʃ ]
+英[ mætʃ ]
 
 v. 配合 / **使相配** / 敌得过
 
 n. 比赛 / 对手 / 相配的人 / 火柴
 
 ## badge
- 
-英 [bædʒ] 
+
+英 [bædʒ]
 
 n. **徽章 / 证章 / 奖章 / 标志**
 
 v. **给予…徽章 / 授给…徽章**
 
-## contribution 
-[ˌkɒntrɪˈbjuːʃn] 
+## contribution
+
+[ˌkɒntrɪˈbjuːʃn]
 
 n. **捐款，捐赠，贡献**
 
-## snippet  
-['snɪpɪt] 
-n. **小碎片 / 摘录**  
+## snippet
 
-- code snippet  **代码片段**
+['snɪpɪt]
+n. **小碎片 / 摘录**
 
-## fragment 
-['fræɡmənt] 
+- code snippet **代码片段**
+
+## fragment
+
+['fræɡmənt]
 
 n. **碎片 / 碎块 / 片断 / 不完整的部分**
 
 v. **裂成碎片 / 使裂成碎片 / 使成碎片**
 
 ## evaluate
+
 英 [ɪˈvæljueɪt]
 
 v. **估计;评价;评估**
 
-*get:* `e` 出 + `valu` 价值 + `ate` 表动词 → 出价 → 估价
+_get:_ `e` 出 + `valu` 价值 + `ate` 表动词 → 出价 → 估价
 
 ## validate
+
 ['vælɪdeɪt]
 
 v. **验证 / 证实 / 确认 / 使生效**
 
 ## promise
+
 ['prɒmɪs]
 
 n. **允诺 / 诺言 / 前途 / 指望**
@@ -121,11 +126,13 @@ n. **允诺 / 诺言 / 前途 / 指望**
 v. **答应 / 作出保证 / 有…可能 / 给…以指望**
 
 ## entitlement
+
 [ɪn'taɪt(ə)lmənt]
 
 n. **权利 / 津贴 / 所享有权利的量 / 应得的数额**
 
 ## convert
+
 [kən'vɜːt]
 
 v. **使转变 / 改变 / 转换… / 使…改变信仰**
@@ -133,6 +140,7 @@ v. **使转变 / 改变 / 转换… / 使…改变信仰**
 n. **得分 / <英>触地得分 / 皈依者 / 改变宗教信仰者**
 
 ## parse
+
 [pɑːz]
 
 v. **对句子作句法分析 / 解析 / 从语法上分析**
@@ -140,13 +148,15 @@ v. **对句子作句法分析 / 解析 / 从语法上分析**
 n. **<计算机>句法分析 / 从语法上分析 / 分列**
 
 ## occur
-美[ ə'kɜːr ] 
-英[ ə'kɜː ] 
+
+美[ ə'kɜːr ]
+英[ ə'kɜː ]
 
 v. **发生 / 存在 / 出现**
 
 ## awesome
-美[ 'ɔːsəm ] 
-英[ 'ɔːsəm ] 
+
+美[ 'ɔːsəm ]
+英[ 'ɔːsəm ]
 
 adj. **令人敬畏的 / 使人畏惧的 / 可怕的 / 极好的**
