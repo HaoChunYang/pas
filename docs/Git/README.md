@@ -13,3 +13,5 @@
 [git branch 本地、远程分支管理](./git_branch本地、远程分支管理.md)
 
 [Git 撤销对远程仓库的 push&commit 提交](./Git撤销对远程仓库的push&commit提交.md)
+
+[git 修改远程仓库地址](./git修改远程仓库地址.md)
