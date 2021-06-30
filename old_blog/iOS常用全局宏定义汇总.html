@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <link rel="icon" href="/logo.jpg"><script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?738d580665aa62790e3b196747471f25";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script><script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://s9.cnzz.com/z_stat.php?id=1279283349&web_id=1279283349";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script><title>bugu 站</title><meta name="description" content="bug + u 站 Problem Analysis Solution"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="generator" content="VuePress 2.0.0-beta.18">
+    <link rel="preload" href="/assets/js/runtime~app.970fd2c3.js" as="script"><link rel="preload" href="/assets/css/styles.5f637e0a.css" as="style"><link rel="preload" href="/assets/js/4640.194bc4a9.js" as="script"><link rel="preload" href="/assets/js/app.7d272143.js" as="script">
+    <link rel="stylesheet" href="/assets/css/styles.5f637e0a.css">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container no-sidebar"><header class="navbar"><div class="toggle-sidebar-button"><svg class="icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><span><a href="/" class=""><img class="logo" src="/logo.jpg" alt="bugu 站"><span class="site-name can-hide">bugu 站</span></a></span><div class="navbar-links-wrapper" style=""><!--[--><!--]--><nav class="navbar-links can-hide"><!--[--><div class="navbar-links-item"><a href="/" class="nav-link" aria-label="首页"><!--[--><!--]--> 首页 <!--[--><!--]--></a></div><div class="navbar-links-item"><a href="/iOS/" class="nav-link" aria-label="iOS"><!--[--><!--]--> iOS <!--[--><!--]--></a></div><div class="navbar-links-item"><a href="/Git/" class="nav-link" aria-label="Git"><!--[--><!--]--> Git <!--[--><!--]--></a></div><div class="navbar-links-item"><a href="/vue/" class="nav-link" aria-label="vue"><!--[--><!--]--> vue <!--[--><!--]--></a></div><div class="navbar-links-item"><a href="/PlayWords/" class="nav-link" aria-label="小白玩单词"><!--[--><!--]--> 小白玩单词 <!--[--><!--]--></a></div><div class="navbar-links-item"><a href="/unclassified/" class="nav-link" aria-label="未分类"><!--[--><!--]--> 未分类 <!--[--><!--]--></a></div><div class="navbar-links-item"><div class="dropdown-wrapper"><button class="dropdown-title" type="button" aria-label="更多》"><span class="title">更多》</span><span class="arrow down"></span></button><button class="mobile-dropdown-title" type="button" aria-label="更多》"><span class="title">更多》</span><span class="right arrow"></span></button><ul style="display:none;" class="nav-dropdown"><!--[--><li class="dropdown-item"><a class="nav-link external" href="https://www.rust-lang.org/zh-CN/" rel="noopener noreferrer" target="_blank" aria-label="Rust"><!--[--><!--]--> Rust <span><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" ariahidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span><!--[--><!--]--></a></li><!--]--></ul></div></div><!--]--></nav><!--[--><!--]--><button class="toggle-dark-button"><svg style="" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg style="display:none;" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><!----></div></header><div class="sidebar-mask"></div><aside class="sidebar"><nav class="navbar-links"><!--[--><div class="navbar-links-item"><a href="/" class="nav-link" aria-label="首页"><!--[--><!--]--> 首页 <!--[--><!--]--></a></div><div class="navbar-links-item"><a href="/iOS/" class="nav-link" aria-label="iOS"><!--[--><!--]--> iOS <!--[--><!--]--></a></div><div class="navbar-links-item"><a href="/Git/" class="nav-link" aria-label="Git"><!--[--><!--]--> Git <!--[--><!--]--></a></div><div class="navbar-links-item"><a href="/vue/" class="nav-link" aria-label="vue"><!--[--><!--]--> vue <!--[--><!--]--></a></div><div class="navbar-links-item"><a href="/PlayWords/" class="nav-link" aria-label="小白玩单词"><!--[--><!--]--> 小白玩单词 <!--[--><!--]--></a></div><div class="navbar-links-item"><a href="/unclassified/" class="nav-link" aria-label="未分类"><!--[--><!--]--> 未分类 <!--[--><!--]--></a></div><div class="navbar-links-item"><div class="dropdown-wrapper"><button class="dropdown-title" type="button" aria-label="更多》"><span class="title">更多》</span><span class="arrow down"></span></button><button class="mobile-dropdown-title" type="button" aria-label="更多》"><span class="title">更多》</span><span class="right arrow"></span></button><ul style="display:none;" class="nav-dropdown"><!--[--><li class="dropdown-item"><a class="nav-link external" href="https://www.rust-lang.org/zh-CN/" rel="noopener noreferrer" target="_blank" aria-label="Rust"><!--[--><!--]--> Rust <span><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" ariahidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span><!--[--><!--]--></a></li><!--]--></ul></div></div><!--]--></nav><!--[--><!--]--><ul class="sidebar-links"><!--[--><!--]--></ul><!--[--><!--]--></aside><main class="page"><!--[--><!--]--><div class="theme-default-content"><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>//通用宏定义
+
+#ifndef define_h
+
+#define define_h
+
+//获取系统对象
+
+#define kApplication[UIApplication sharedApplication]
+
+#define kAppWindow[UIApplication sharedApplication].delegate.window
+
+#define kAppDelegate[AppDelegate shareAppDelegate]
+
+#define kRootViewController[UIApplication sharedApplication].delegate.window.rootViewController
+
+#define kUserDefaults[NSUserDefaults standardUserDefaults]
+
+#define kNotificationCenter[NSNotificationCenter defaultCenter]
+
+//获取屏幕宽高
+
+#define KScreenWidth([[UIScreen mainScreen]bounds].size.width)
+
+#define KScreenHeight[[UIScreen mainScreen]bounds].size.height
+
+#define kScreen_Bounds[UIScreen mainScreen].bounds
+
+#define Iphone6ScaleWidth KScreenWidth/375.0
+
+#define Iphone6ScaleHeight KScreenHeight/667.0
+
+//根据ip6的屏幕来拉伸
+
+#define kRealValue(with)((with)*(KScreenWidth/375.0f))
+
+//强弱引用
+
+#define kWeakSelf(type)__weak typeof(type)weak##type = type;
+
+#define kStrongSelf(type)__strong typeof(type)type = weak##type;
+
+//View圆角和加边框
+
+#define ViewBorderRadius(View,Radius,Width,Color)\n
+\n
+[View.layer setCornerRadius:(Radius)];\n
+[View.layer setMasksToBounds:YES];\n
+[View.layer setBorderWidth:(Width)];\n
+[View.layer setBorderColor:[Color CGColor]]
+
+// View圆角
+
+#define ViewRadius(View,Radius)\n
+\n
+[View.layer setCornerRadius:(Radius)];\n
+[View.layer setMasksToBounds:YES]
+
+//property属性快速声明
+
+#define PropertyString(s)@property(nonatomic,copy)NSString * s
+
+#define PropertyNSInteger(s)@property(nonatomic,assign)NSIntegers
+
+#define PropertyFloat(s)@property(nonatomic,assign)floats
+
+#define PropertyLongLong(s)@property(nonatomic,assign)long long s
+
+#define PropertyNSDictionary(s)@property(nonatomic,strong)NSDictionary * s
+
+#define PropertyNSArray(s)@property(nonatomic,strong)NSArray * s
+
+#define PropertyNSMutableArray(s)@property(nonatomic,strong)NSMutableArray * s
+
+///IOS版本判断
+
+#define IOSAVAILABLEVERSION(version)([[UIDevice currentDevice]availableVersion:version]&lt; 0)
+
+//当前系统版本
+
+#define CurrentSystemVersion[[UIDevice currentDevice].systemVersion doubleValue]
+
+//当前语言
+
+#define CurrentLanguage(［NSLocale preferredLanguages]objectAtIndex:0])
+
+//-------------------打印日志-------------------------
+
+//DEBUG模式下打印日志,当前行
+
+#ifdef DEBUG
+
+#define DLog(fmt,...)NSLog((@&quot;%s[Line %d]&quot; fmt),__PRETTY_FUNCTION__,__LINE__,##__VA_ARGS__);
+
+#else
+
+#define DLog(...)
+
+#endif
+
+//拼接字符串
+
+#define NSStringFormat(format,...)[NSString stringWithFormat:format,##__VA_ARGS__]
+
+//颜色
+
+#define KClearColor[UIColor clearColor]
+
+#define KWhiteColor[UIColor whiteColor]
+
+#define KBlackColor[UIColor blackColor]
+
+#define KGrayColor[UIColor grayColor]
+
+#define KGray2Color[UIColor lightGrayColor]
+
+#define KBlueColor[UIColor blueColor]
+
+#define KRedColor[UIColor redColor]
+
+#define kRandomColorKRGBColor(arc4random_uniform(256)/255.0,arc4random_uniform(256)/255.0,arc4random_uniform(256)/255.0)//随机色生成
+
+//字体
+
+#define BOLDSYSTEMFONT(FONTSIZE)[UIFont boldSystemFontOfSize:FONTSIZE]
+
+#define SYSTEMFONT(FONTSIZE)[UIFont systemFontOfSize:FONTSIZE]
+
+#define FONT(NAME,FONTSIZE)[UIFont fontWithName:(NAME)size:(FONTSIZE)]
+
+//定义UIImage对象
+
+#define ImageWithFile(_pointer)[UIImage imageWithContentsOfFile:([[NSBundle mainBundle]pathForResource:[NSString stringWithFormat:@&quot;%@@%dx&quot;,_pointer,(int)[UIScreen mainScreen].nativeScale]ofType:@&quot;png&quot;])]
+
+#define IMAGE_NAMED(name)[UIImage imageNamed:name]
+
+//数据验证
+
+#define StrValid(f)(f!=nil &amp;&amp;[f isKindOfClass:[NSString class]]&amp;&amp; ![f isEqualToString:@&quot;&quot;])
+
+#define SafeStr(f)(StrValid(f)?f:@&quot;&quot;)
+
+#define HasString(str,eky)([str rangeOfString:key].location!=NSNotFound)
+
+#define ValidStr(f)StrValid(f)
+
+#define ValidDict(f)(f!=nil &amp;&amp;[f isKindOfClass:[NSDictionary class]])
+
+#define ValidArray(f)(f!=nil &amp;&amp;[f isKindOfClass:[NSArray class]]&amp;&amp;[f count]&gt;0)
+
+#define ValidNum(f)(f!=nil &amp;&amp;[f isKindOfClass:[NSNumber class]])
+
+#define ValidClass(f,cls)(f!=nil &amp;&amp;[f isKindOfClass:[cls class]])
+
+#define ValidData(f)(f!=nil &amp;&amp;[f isKindOfClass:[NSData class]])
+
+//获取一段时间间隔
+
+#define kStartTime CFAbsoluteTime start = CFAbsoluteTimeGetCurrent();
+
+#define kEndTimeNSLog(@&quot;Time: %f&quot;,CFAbsoluteTimeGetCurrent()- start)
+
+//打印当前方法名
+
+#define ITTDPRINTMETHODNAME()ITTDPRINT(@&quot;%s&quot;,__PRETTY_FUNCTION__)
+
+//GCD
+
+#define kDISPATCH_ASYNC_BLOCK(block)dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT,0),block)
+
+#define kDISPATCH_MAIN_BLOCK(block)dispatch_async(dispatch_get_main_queue(),block)
+
+//GCD -一次性执行
+
+#define kDISPATCH_ONCE_BLOCK(onceBlock)static dispatch_once_t onceToken;dispatch_once(&amp;onceToken,onceBlock);
+
+//单例化一个类
+
+#define SINGLETON_FOR_HEADER(className)\n
+\n
++(className *)shared##className;
+
+#define SINGLETON_FOR_CLASS(className)\n
+\n
++(className *)shared##className { \n
+static className *shared##className = nil;\n
+static dispatch_once_t onceToken;\n
+dispatch_once(&amp;onceToken,^{ \n
+shared##className =[[self alloc]init];\n
+});\n
+return shared##className;\n
+}
+
+#endif /* define_h */
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br><span class="line-number">168</span><br><span class="line-number">169</span><br><span class="line-number">170</span><br><span class="line-number">171</span><br><span class="line-number">172</span><br><span class="line-number">173</span><br><span class="line-number">174</span><br><span class="line-number">175</span><br><span class="line-number">176</span><br><span class="line-number">177</span><br><span class="line-number">178</span><br><span class="line-number">179</span><br><span class="line-number">180</span><br><span class="line-number">181</span><br><span class="line-number">182</span><br><span class="line-number">183</span><br><span class="line-number">184</span><br><span class="line-number">185</span><br><span class="line-number">186</span><br><span class="line-number">187</span><br><span class="line-number">188</span><br><span class="line-number">189</span><br><span class="line-number">190</span><br><span class="line-number">191</span><br><span class="line-number">192</span><br><span class="line-number">193</span><br><span class="line-number">194</span><br></div></div></div><footer class="page-meta"><div class="meta-item edit-link"><a class="nav-link external meta-item-label" href="https://github.com/haochunyang/pas/edit/master/docs/old_blog/iOS常用全局宏定义汇总.md" rel="noopener noreferrer" target="_blank" aria-label="完善此页面信息"><!--[--><!--]--> 完善此页面信息 <span><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" ariahidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span><!--[--><!--]--></a></div><div class="meta-item last-updated"><span class="meta-item-label">最后更新: </span><span class="meta-item-info">2020-8-12 9:09:57 ├F10: PM┤</span></div><!----></footer><!----><!--[--><!--]--></main></div><!----><!--]--></div>
+    <script src="/assets/js/runtime~app.970fd2c3.js" defer></script><script src="/assets/js/4640.194bc4a9.js" defer></script><script src="/assets/js/app.7d272143.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,1 @@
+(self.webpackChunkbugu=self.webpackChunkbugu||[]).push([[88],{1801:(t,e,u)=>{"use strict";u.r(e),u.d(e,{data:()=>a});const a={key:"v-3706649a",path:"/404.html",title:"",lang:"zh-CN",frontmatter:{layout:"404"},excerpt:"",headers:[],filePathRelative:null,git:{}}},1124:(t,e,u)=>{"use strict";u.r(e),u.d(e,{default:()=>a});const a={render:function(t,e){return null}}}}]);

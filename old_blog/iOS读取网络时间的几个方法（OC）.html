@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <link rel="icon" href="/logo.jpg"><script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?738d580665aa62790e3b196747471f25";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script><script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://s9.cnzz.com/z_stat.php?id=1279283349&web_id=1279283349";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script><title>一 | bugu 站</title><meta name="description" content="bug + u 站 Problem Analysis Solution"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="generator" content="VuePress 2.0.0-beta.18">
+    <link rel="preload" href="/assets/js/runtime~app.970fd2c3.js" as="script"><link rel="preload" href="/assets/css/styles.5f637e0a.css" as="style"><link rel="preload" href="/assets/js/4640.194bc4a9.js" as="script"><link rel="preload" href="/assets/js/app.7d272143.js" as="script">
+    <link rel="stylesheet" href="/assets/css/styles.5f637e0a.css">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container no-sidebar"><header class="navbar"><div class="toggle-sidebar-button"><svg class="icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><span><a href="/" class=""><img class="logo" src="/logo.jpg" alt="bugu 站"><span class="site-name can-hide">bugu 站</span></a></span><div class="navbar-links-wrapper" style=""><!--[--><!--]--><nav class="navbar-links can-hide"><!--[--><div class="navbar-links-item"><a href="/" class="nav-link" aria-label="首页"><!--[--><!--]--> 首页 <!--[--><!--]--></a></div><div class="navbar-links-item"><a href="/iOS/" class="nav-link" aria-label="iOS"><!--[--><!--]--> iOS <!--[--><!--]--></a></div><div class="navbar-links-item"><a href="/Git/" class="nav-link" aria-label="Git"><!--[--><!--]--> Git <!--[--><!--]--></a></div><div class="navbar-links-item"><a href="/vue/" class="nav-link" aria-label="vue"><!--[--><!--]--> vue <!--[--><!--]--></a></div><div class="navbar-links-item"><a href="/PlayWords/" class="nav-link" aria-label="小白玩单词"><!--[--><!--]--> 小白玩单词 <!--[--><!--]--></a></div><div class="navbar-links-item"><a href="/unclassified/" class="nav-link" aria-label="未分类"><!--[--><!--]--> 未分类 <!--[--><!--]--></a></div><div class="navbar-links-item"><div class="dropdown-wrapper"><button class="dropdown-title" type="button" aria-label="更多》"><span class="title">更多》</span><span class="arrow down"></span></button><button class="mobile-dropdown-title" type="button" aria-label="更多》"><span class="title">更多》</span><span class="right arrow"></span></button><ul style="display:none;" class="nav-dropdown"><!--[--><li class="dropdown-item"><a class="nav-link external" href="https://www.rust-lang.org/zh-CN/" rel="noopener noreferrer" target="_blank" aria-label="Rust"><!--[--><!--]--> Rust <span><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" ariahidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span><!--[--><!--]--></a></li><!--]--></ul></div></div><!--]--></nav><!--[--><!--]--><button class="toggle-dark-button"><svg style="" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg style="display:none;" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><!----></div></header><div class="sidebar-mask"></div><aside class="sidebar"><nav class="navbar-links"><!--[--><div class="navbar-links-item"><a href="/" class="nav-link" aria-label="首页"><!--[--><!--]--> 首页 <!--[--><!--]--></a></div><div class="navbar-links-item"><a href="/iOS/" class="nav-link" aria-label="iOS"><!--[--><!--]--> iOS <!--[--><!--]--></a></div><div class="navbar-links-item"><a href="/Git/" class="nav-link" aria-label="Git"><!--[--><!--]--> Git <!--[--><!--]--></a></div><div class="navbar-links-item"><a href="/vue/" class="nav-link" aria-label="vue"><!--[--><!--]--> vue <!--[--><!--]--></a></div><div class="navbar-links-item"><a href="/PlayWords/" class="nav-link" aria-label="小白玩单词"><!--[--><!--]--> 小白玩单词 <!--[--><!--]--></a></div><div class="navbar-links-item"><a href="/unclassified/" class="nav-link" aria-label="未分类"><!--[--><!--]--> 未分类 <!--[--><!--]--></a></div><div class="navbar-links-item"><div class="dropdown-wrapper"><button class="dropdown-title" type="button" aria-label="更多》"><span class="title">更多》</span><span class="arrow down"></span></button><button class="mobile-dropdown-title" type="button" aria-label="更多》"><span class="title">更多》</span><span class="right arrow"></span></button><ul style="display:none;" class="nav-dropdown"><!--[--><li class="dropdown-item"><a class="nav-link external" href="https://www.rust-lang.org/zh-CN/" rel="noopener noreferrer" target="_blank" aria-label="Rust"><!--[--><!--]--> Rust <span><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" ariahidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span><!--[--><!--]--></a></li><!--]--></ul></div></div><!--]--></nav><!--[--><!--]--><ul class="sidebar-links"><!--[--><!--]--></ul><!--[--><!--]--></aside><main class="page"><!--[--><!--]--><div class="theme-default-content"><!--[--><p>实现iOS读取网络时间的方法，实现时收集到几个写法。可以使用，记录一下。</p><h1 id="一"><a class="header-anchor" href="#一">#</a> 一</h1><div class="language-Objectve ext-Objectve line-numbers-mode"><pre class="language-Objectve"><code>- (NSDate *)getInternetDate
+{
+    NSString *urlString = @&quot;https://m.baidu.com&quot;;
+    urlString = [urlString stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding];
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
+    [request setURL:[NSURL URLWithString: urlString]];
+    [request setCachePolicy:NSURLRequestReloadIgnoringCacheData];
+    [request setTimeoutInterval: 2];
+    [request setHTTPShouldHandleCookies:FALSE];
+    [request setHTTPMethod:@&quot;GET&quot;];
+    NSHTTPURLResponse *response;
+    [NSURLConnection sendSynchronousRequest:request returningResponse:&amp;response error:nil];
+    
+    NSString *date = [[response allHeaderFields] objectForKey:@&quot;Date&quot;];
+    date = [date substringFromIndex:5];
+    date = [date substringToIndex:[date length]-4];
+    NSDateFormatter *dMatter = [[NSDateFormatter alloc] init];
+    dMatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@&quot;en_US&quot;];
+    [dMatter setDateFormat:@&quot;dd MMM yyyy HH:mm:ss&quot;];
+    NSDate *netDate = [[dMatter dateFromString:date] dateByAddingTimeInterval:60*60*8];
+    NSTimeZone *zone = [NSTimeZone systemTimeZone];
+    NSInteger interval = [zone secondsFromGMTForDate: netDate];
+    NSDate *localeDate = [netDate  dateByAddingTimeInterval: interval];
+    return localeDate;
+}
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><h1 id="二"><a class="header-anchor" href="#二">#</a> 二</h1><div class="language-Objectve ext-Objectve line-numbers-mode"><pre class="language-Objectve"><code>- (NSString *)getInternetDateString
+{
+    //NSString *urlString = @&quot;https://www.baidu.com&quot;;
+    NSString *urlString = @&quot;http://www.beijing-time.org/time.asp&quot;;
+    urlString = [urlString stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding];
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
+    [request setURL:[NSURL URLWithString: urlString]];
+    [request setCachePolicy:NSURLRequestReloadIgnoringCacheData];
+    [request setTimeoutInterval: 2];
+    [request setHTTPShouldHandleCookies:FALSE];
+    [request setHTTPMethod:@&quot;GET&quot;];
+    NSHTTPURLResponse *response;
+    [NSURLConnection sendSynchronousRequest:request returningResponse:&amp;response error:nil];
+    //NSLog(@&quot;&gt;&gt;&gt;&gt;&gt; response :%@&quot;,response);
+    NSString *date = [[response allHeaderFields] objectForKey:@&quot;Date&quot;];
+    
+    //NSLog(@&quot;&gt;&gt;&gt;&gt;&gt; date :%@&quot;,date);
+    date = [date substringFromIndex:5];
+    date = [date substringToIndex:[date length]-4];
+    //NSLog(@&quot;&gt;&gt;&gt;&gt;&gt; date :%@&quot;,date);
+    NSDateFormatter *dMatter = [[NSDateFormatter alloc] init];
+    dMatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@&quot;en_US&quot;];
+    //    dMatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@&quot;zh-CHS&quot;];
+    [dMatter setDateFormat:@&quot;dd MMM yyyy HH:mm:ss&quot;];
+    NSDate *netDate = [[dMatter dateFromString:date] dateByAddingTimeInterval:60*60*8];
+    NSTimeZone *zone = [NSTimeZone systemTimeZone];
+    NSInteger interval = [zone secondsFromGMTForDate: netDate];
+    NSDate *localeDate = [netDate  dateByAddingTimeInterval: interval];
+    //NSLog(@&quot;&gt;&gt;&gt;&gt;&gt; localeDate :%@&quot;,localeDate);
+    NSString *tmpDate = [NSString stringWithFormat:@&quot;%@&quot;,localeDate];
+    tmpDate = [tmpDate stringByReplacingOccurrencesOfString:@&quot; +0000&quot; withString:@&quot;&quot;];
+    //NSLog(@&quot;&gt;&gt;&gt;&gt;&gt; localeDate :%@&quot;,tmpDate);
+    
+    NSDateFormatter *format1=[[NSDateFormatter alloc]init];
+    [format1 setDateFormat:@&quot;yyyy/MM/dd HH:mm:ss&quot;];
+    NSDate *nowDate = [format1 dateFromString:tmpDate];
+    NSString *nowDate_ = [format1 stringFromDate:nowDate];
+    return nowDate_;
+}
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br></div></div><h1 id="三"><a class="header-anchor" href="#三">#</a> 三</h1><div class="language-Objectve ext-Objectve line-numbers-mode"><pre class="language-Objectve"><code>- (void)getInternetDateWithSuccess:(void(^)(NSDate * date))success
+                           failure:(void(^)(NSError *error))failure{
+    
+    //1.创建URL
+    NSString *urlString = @&quot;https://m.baidu.com&quot;;
+    urlString = [urlString stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+    
+    //2.创建request请求对象
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
+    [request setURL:[NSURL URLWithString: urlString]];
+    [request setCachePolicy:NSURLRequestReloadIgnoringCacheData];
+    [request setTimeoutInterval:5];
+    [request setHTTPShouldHandleCookies:FALSE];
+    [request setHTTPMethod:@&quot;GET&quot;];
+    
+    //3.创建URLSession对象
+    NSURLSession *session = [NSURLSession sharedSession];
+    
+    //4.设置数据返回回调的block
+    NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        if (error == nil &amp;&amp; response != nil) {
+            //这么做的原因是简体中文下的手机不能识别“MMM”，只能识别“MM”
+            NSArray *monthEnglishArray = @[@&quot;Jan&quot;,@&quot;Feb&quot;,@&quot;Mar&quot;,@&quot;Apr&quot;,@&quot;May&quot;,@&quot;Jun&quot;,@&quot;Jul&quot;,@&quot;Aug&quot;,@&quot;Sept&quot;,@&quot;Sep&quot;,@&quot;Oct&quot;,@&quot;Nov&quot;,@&quot;Dec&quot;];
+            NSArray *monthNumArray = @[@&quot;01&quot;,@&quot;02&quot;,@&quot;03&quot;,@&quot;04&quot;,@&quot;05&quot;,@&quot;06&quot;,@&quot;07&quot;,@&quot;08&quot;,@&quot;09&quot;,@&quot;09&quot;,@&quot;10&quot;,@&quot;11&quot;,@&quot;12&quot;];
+            NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
+            NSDictionary *allHeaderFields = [httpResponse allHeaderFields];
+            NSString *dateStr = [allHeaderFields objectForKey:@&quot;Date&quot;];
+            dateStr = [dateStr substringFromIndex:5];
+            dateStr = [dateStr substringToIndex:[dateStr length]-4];
+            dateStr = [dateStr stringByAppendingString:@&quot; +0000&quot;];
+            //当前语言是中文的话，识别不了英文缩写
+            for (NSInteger i = 0 ; i &lt; monthEnglishArray.count ; i++) {
+                NSString *monthEngStr = monthEnglishArray[i];
+                NSString *monthNumStr = monthNumArray[i];
+                dateStr = [dateStr stringByReplacingOccurrencesOfString:monthEngStr withString:monthNumStr];
+            }
+            NSDateFormatter *dMatter = [[NSDateFormatter alloc] init];
+            [dMatter setDateFormat:@&quot;dd MM yyyy HH:mm:ss Z&quot;];
+            NSDate *netDate = [dMatter dateFromString:dateStr];
+            NSTimeInterval timeInterval = [netDate timeIntervalSince1970];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                success(netDate);
+            });
+        }else{
+            dispatch_async(dispatch_get_main_queue(), ^{
+                failure(error);
+            });
+        }
+    }];
+    //5、执行网络请求
+    [task resume];
+    
+}
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br></div></div><!--]--></div><footer class="page-meta"><div class="meta-item edit-link"><a class="nav-link external meta-item-label" href="https://github.com/haochunyang/pas/edit/master/docs/old_blog/iOS读取网络时间的几个方法（OC）.md" rel="noopener noreferrer" target="_blank" aria-label="完善此页面信息"><!--[--><!--]--> 完善此页面信息 <span><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" ariahidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span><!--[--><!--]--></a></div><div class="meta-item last-updated"><span class="meta-item-label">最后更新: </span><span class="meta-item-info">2020-8-12 9:09:57 ├F10: PM┤</span></div><!----></footer><!----><!--[--><!--]--></main></div><!----><!--]--></div>
+    <script src="/assets/js/runtime~app.970fd2c3.js" defer></script><script src="/assets/js/4640.194bc4a9.js" defer></script><script src="/assets/js/app.7d272143.js" defer></script>
+  </body>
+</html>

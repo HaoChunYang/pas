@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <link rel="icon" href="/logo.jpg"><script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?738d580665aa62790e3b196747471f25";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script><script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://s9.cnzz.com/z_stat.php?id=1279283349&web_id=1279283349";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script><title>/****  debug log **/ //NSLog输出信息 | bugu 站</title><meta name="description" content="bug + u 站 Problem Analysis Solution"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="generator" content="VuePress 2.0.0-beta.18">
+    <link rel="preload" href="/assets/js/runtime~app.970fd2c3.js" as="script"><link rel="preload" href="/assets/css/styles.5f637e0a.css" as="style"><link rel="preload" href="/assets/js/4640.194bc4a9.js" as="script"><link rel="preload" href="/assets/js/app.7d272143.js" as="script">
+    <link rel="stylesheet" href="/assets/css/styles.5f637e0a.css">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container no-sidebar"><header class="navbar"><div class="toggle-sidebar-button"><svg class="icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><span><a href="/" class=""><img class="logo" src="/logo.jpg" alt="bugu 站"><span class="site-name can-hide">bugu 站</span></a></span><div class="navbar-links-wrapper" style=""><!--[--><!--]--><nav class="navbar-links can-hide"><!--[--><div class="navbar-links-item"><a href="/" class="nav-link" aria-label="首页"><!--[--><!--]--> 首页 <!--[--><!--]--></a></div><div class="navbar-links-item"><a href="/iOS/" class="nav-link" aria-label="iOS"><!--[--><!--]--> iOS <!--[--><!--]--></a></div><div class="navbar-links-item"><a href="/Git/" class="nav-link" aria-label="Git"><!--[--><!--]--> Git <!--[--><!--]--></a></div><div class="navbar-links-item"><a href="/vue/" class="nav-link" aria-label="vue"><!--[--><!--]--> vue <!--[--><!--]--></a></div><div class="navbar-links-item"><a href="/PlayWords/" class="nav-link" aria-label="小白玩单词"><!--[--><!--]--> 小白玩单词 <!--[--><!--]--></a></div><div class="navbar-links-item"><a href="/unclassified/" class="nav-link" aria-label="未分类"><!--[--><!--]--> 未分类 <!--[--><!--]--></a></div><div class="navbar-links-item"><div class="dropdown-wrapper"><button class="dropdown-title" type="button" aria-label="更多》"><span class="title">更多》</span><span class="arrow down"></span></button><button class="mobile-dropdown-title" type="button" aria-label="更多》"><span class="title">更多》</span><span class="right arrow"></span></button><ul style="display:none;" class="nav-dropdown"><!--[--><li class="dropdown-item"><a class="nav-link external" href="https://www.rust-lang.org/zh-CN/" rel="noopener noreferrer" target="_blank" aria-label="Rust"><!--[--><!--]--> Rust <span><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" ariahidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span><!--[--><!--]--></a></li><!--]--></ul></div></div><!--]--></nav><!--[--><!--]--><button class="toggle-dark-button"><svg style="" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg style="display:none;" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><!----></div></header><div class="sidebar-mask"></div><aside class="sidebar"><nav class="navbar-links"><!--[--><div class="navbar-links-item"><a href="/" class="nav-link" aria-label="首页"><!--[--><!--]--> 首页 <!--[--><!--]--></a></div><div class="navbar-links-item"><a href="/iOS/" class="nav-link" aria-label="iOS"><!--[--><!--]--> iOS <!--[--><!--]--></a></div><div class="navbar-links-item"><a href="/Git/" class="nav-link" aria-label="Git"><!--[--><!--]--> Git <!--[--><!--]--></a></div><div class="navbar-links-item"><a href="/vue/" class="nav-link" aria-label="vue"><!--[--><!--]--> vue <!--[--><!--]--></a></div><div class="navbar-links-item"><a href="/PlayWords/" class="nav-link" aria-label="小白玩单词"><!--[--><!--]--> 小白玩单词 <!--[--><!--]--></a></div><div class="navbar-links-item"><a href="/unclassified/" class="nav-link" aria-label="未分类"><!--[--><!--]--> 未分类 <!--[--><!--]--></a></div><div class="navbar-links-item"><div class="dropdown-wrapper"><button class="dropdown-title" type="button" aria-label="更多》"><span class="title">更多》</span><span class="arrow down"></span></button><button class="mobile-dropdown-title" type="button" aria-label="更多》"><span class="title">更多》</span><span class="right arrow"></span></button><ul style="display:none;" class="nav-dropdown"><!--[--><li class="dropdown-item"><a class="nav-link external" href="https://www.rust-lang.org/zh-CN/" rel="noopener noreferrer" target="_blank" aria-label="Rust"><!--[--><!--]--> Rust <span><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" ariahidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span><!--[--><!--]--></a></li><!--]--></ul></div></div><!--]--></nav><!--[--><!--]--><ul class="sidebar-links"><!--[--><!--]--></ul><!--[--><!--]--></aside><main class="page"><!--[--><!--]--><div class="theme-default-content"><!--[--><h1 id="debug-log-nslog输出信息"><a class="header-anchor" href="#debug-log-nslog输出信息">#</a> /**** debug log **/ //NSLog输出信息</h1><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>/******************************************************/
+
+/****  debug log **/ //NSLog输出信息
+
+#ifdef DEBUG
+
+#define DLog( s, ... ) NSLog( @&quot;&lt; %@:(%d) &gt; %@&quot;, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+
+#else
+
+#define DLog( s, ... )
+
+#endif
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>
+/***  DEBUG RELEASE  */
+
+#if DEBUG
+
+#define MCRelease(x)
+
+#else
+
+#define MCRelease(x)
+
+#endif
+
+/*****  release   *****/
+#define NILRelease [x release], x = nil
+
+#pragma mark - Frame(宏 x,y,width,height)
+
+#define MainScreenScale [[UIScreen mainScreen]scale] //屏幕的分辨率 当结果为1时，显示的是普通屏幕，结果为2时，显示的是Retian屏幕
+// App Frame Height&amp;Width
+#define Application_Frame  [[UIScreen mainScreen] applicationFrame] //除去信号区的屏幕的frame
+#define APP_Frame_Height   [[UIScreen mainScreen] applicationFrame].size.height //应用程序的屏幕高度
+#define App_Frame_Width    [[UIScreen mainScreen] applicationFrame].size.width  //应用程序的屏幕宽度
+/*** MainScreen Height Width */
+
+#define Main_Screen_Width  [[UIScreen mainScreen] bounds].size.width  //主屏幕的宽度
+#define Main_Screen_Height [[UIScreen mainScreen] bounds].size.height //主屏幕的高度
+#define Main_Screen_Height_without_top [[UIScreen mainScreen] bounds].size.height-64 //主屏幕的高度
+
+
+
+// View 坐标(x,y)和宽高(width,height)
+#define X(v)               (v).frame.origin.x
+#define Y(v)               (v).frame.origin.y
+#define WIDTH(v)           (v).frame.size.width
+#define HEIGHT(v)          (v).frame.size.height
+
+#define MinX(v)            CGRectGetMinX((v).frame) // 获得控件屏幕的x坐标
+#define MinY(v)            CGRectGetMinY((v).frame) // 获得控件屏幕的Y坐标
+
+#define MidX(v)            CGRectGetMidX((v).frame) //横坐标加上到控件中点坐标
+#define MidY(v)            CGRectGetMidY((v).frame) //纵坐标加上到控件中点坐标
+
+#define MaxX(v)            CGRectGetMaxX((v).frame) //横坐标加上控件的宽度
+#define MaxY(v)            CGRectGetMaxY((v).frame) //纵坐标加上控件的高度
+
+#define CONTRLOS_FRAME(x,y,width,height)     CGRectMake(x,y,width,height)
+
+//    系统控件的默认高度
+#define kStatusBarHeight   (20.f)
+#define kTopBarHeight      (44.f)
+#define kBottomBarHeight   (49.f)
+
+#define kCellDefaultHeight (44.f)
+
+#define KstatusBarAndNavigation (64.0)
+// 当控件为全屏时的横纵左边
+#define kFrameX             (0.0)
+#define kFrameY             (0.0)
+
+
+#define kPhoneWithStatusNoPhone5Height   (480.0)
+#define kPhoneNoWithStatusNoPhone5Height (460.0)
+#define kPhoneWithStatusPhone5Height     (568.0)
+#define kPhoneNoWithStatusPhone5Height   (548.0)
+
+#define kPadFrameWidth                   (768.0)
+#define kPadWithStatusHeight             (1024.0)
+#define kPadNoWithStatusHeight           (1004.0)
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br></div></div><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>//中英状态下键盘的高度
+#define kEnglishKeyboardHeight  (216.f)
+#define kChineseKeyboardHeight  (252.f)
+
+#pragma mark - Funtion Method (宏 方法)
+//PNG JPG 图片路径
+#define PNGPATH(NAME)          [[NSBundle mainBundle] pathForResource:[NSString stringWithUTF8String:NAME] ofType:@&quot;png&quot;]
+#define JPGPATH(NAME)          [[NSBundle mainBundle] pathForResource:[NSString stringWithUTF8String:NAME] ofType:@&quot;jpg&quot;]
+#define PATH(NAME,EXT)         [[NSBundle mainBundle] pathForResource:(NAME) ofType:(EXT)]
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>//加载图片
+#define PNGIMAGE(NAME)         [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:(NAME) ofType:@&quot;png&quot;]]
+#define JPGIMAGE(NAME)         [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:(NAME) ofType:@&quot;jpg&quot;]]
+#define IMAGE(NAME,EXT)        [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:(NAME) ofType:(EXT)]]
+#define IMAGENAMED(NAME)       [UIImage imageNamed:NAME]
+
+//字体大小（常规/粗体）
+#define BOLDSYSTEMFONT(FONTSIZE) [UIFont boldSystemFontOfSize:FONTSIZE]
+#define SYSTEMFONT(FONTSIZE)     [UIFont systemFontOfSize:FONTSIZE]
+#define FONT(NAME,FONTSIZE)      [UIFont fontWithName:(NAME) size:(FONTSIZE)]
+
+//颜色（RGB）
+#define RGBCOLOR(r,g,b)          [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]
+#define RGBACOLOR(r,g,b,a)       [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
+
+#define BACKGROUND_COLOR         [UIColor colorWithRed:22/255.0f green:29/255.0f blue:38/255.0f alpha:1]
+//当前版本
+#define FSystenVersion            ([[[UIDevice currentDevice] systemVersion] floatValue])
+#define DSystenVersion            ([[[UIDevice currentDevice] systemVersion] doubleValue])
+#define SSystemVersion            ([[UIDevice currentDevice] systemVersion])
+
+//当前语言
+#define CURRENTLANGUAGE           ([[NSLocale preferredLanguages] objectAtIndex:0])
+
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>//是否Retina屏
+#define isRetina                  ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) :NO)
+//是否iPhone5
+#define ISIPHONE                  [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone
+#define ISIPHONE5                 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+#define ISIPHONE6                 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
+#define ISIPHONE6P                 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
+
+//是否是iPad
+#define isPad                      (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+
+
+#define YELLO_APP [UIColor colorWithRed:255/255 green:148.0/255 blue:28.0/255 alpha:1]
+
+// UIView - viewWithTag 通过tag值获得子视图
+#define VIEWWITHTAG(_OBJECT,_TAG)   [_OBJECT viewWithTag : _TAG]
+
+//应用程序的名字
+#define AppDisplayName              [[NSBundle mainBundle] objectForInfoDictionaryKey:@&quot;CFBundleDisplayName&quot;]
+
+//RGB颜色转换（16进制-&gt;10进制）
+#define UIColorFromRGB(rgbValue)    [UIColor colorWithRed:((float)((rgbValue &amp; 0xFF0000) &gt;&gt; 16))/255.0 green:((float)((rgbValue &amp; 0xFF00) &gt;&gt; 8))/255.0 blue:((float)(rgbValue &amp; 0xFF))/255.0 alpha:1.0]
+
+//判断设备室真机还是模拟器
+#if TARGET_OS_IPHONE
+/** iPhone Device */
+#endif
+
+#if TARGET_IPHONE_SIMULATOR
+/** iPhone Simulator */
+#endif
+
+#endif
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br></div></div><!--]--></div><footer class="page-meta"><div class="meta-item edit-link"><a class="nav-link external meta-item-label" href="https://github.com/haochunyang/pas/edit/master/docs/old_blog/iOS常用宏定义.md" rel="noopener noreferrer" target="_blank" aria-label="完善此页面信息"><!--[--><!--]--> 完善此页面信息 <span><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" ariahidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span><!--[--><!--]--></a></div><div class="meta-item last-updated"><span class="meta-item-label">最后更新: </span><span class="meta-item-info">2020-8-12 9:09:57 ├F10: PM┤</span></div><!----></footer><!----><!--[--><!--]--></main></div><!----><!--]--></div>
+    <script src="/assets/js/runtime~app.970fd2c3.js" defer></script><script src="/assets/js/4640.194bc4a9.js" defer></script><script src="/assets/js/app.7d272143.js" defer></script>
+  </body>
+</html>
